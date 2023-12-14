@@ -18,6 +18,16 @@ const faucetClient = new FaucetClient(NODE_URL, FAUCET_URL);
 const account1 = new AptosAccount();
 // receiver Account
 const account2 = new AptosAccount();
+
+
+
+console.log("=== Addresses ===");
+console.log(`account1: ${account1.address()}`);
+console.log(`account2: ${account2.address()}`);
+console.log("");
+
+
+
 //token vesting program id
 const pid="0x86c0477879e133d970eec70a64f9a1bbc1b7eab2efe8a3471b6e36ce8b370e2c";
 //Token Vesting Smart Contract
