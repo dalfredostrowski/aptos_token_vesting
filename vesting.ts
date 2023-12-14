@@ -33,7 +33,6 @@ const pid="0x86c0477879e133d970eec70a64f9a1bbc1b7eab2efe8a3471b6e36ce8b370e2c";
 //Token Vesting Smart Contract
 // describe("Token Vesting", () => {
  // it ("Creating Vesting", async () => {
-console.log("wfti    s");
 
 (async () => {
 
@@ -69,10 +68,6 @@ console.log("wft");
 
   await faucetClient.fundAccount(account2.address(), 1000000000);//Airdropping
     //the receiver gets allocated fund as required
-
-console.log("what happened");
-
-
   const create_getfunds_payloads = {
       type: "entry_function_payload",
       function: pid+"::vesting::release_fund",
