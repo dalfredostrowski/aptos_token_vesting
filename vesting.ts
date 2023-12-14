@@ -36,7 +36,6 @@ const pid="0x86c0477879e133d970eec70a64f9a1bbc1b7eab2efe8a3471b6e36ce8b370e2c";
 
 (async () => {
 
-console.log("wft");
   await faucetClient.fundAccount(account1.address(), 1000000000);//Airdropping
     //Time and Amounts
     const now = Math.floor(Date.now() / 1000)
