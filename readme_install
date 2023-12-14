@@ -72,43 +72,6 @@ BUILDING Examples
 }
 
 
-ubuntu@ip-172-31-38-64:~/aptos-core/aptos-move/move-examples/hello_blockchain$  /home/ubuntu/.local/bin/aptos move test --named-addresses token_vesting=default
-INCLUDING DEPENDENCY AptosFramework
-INCLUDING DEPENDENCY AptosStdlib
-INCLUDING DEPENDENCY MoveStdlib
-BUILDING Examples
-Running Move unit tests
-[ FAIL    ] 0x68501796e038c63b063a7272b4f0998bab9697082c587ca4c84848cdb8fc8134::vesting::test_vesting
-
-Test failures:
-
-Failures in 0x68501796e038c63b063a7272b4f0998bab9697082c587ca4c84848cdb8fc8134::vesting:
-
-
-
-
-┌── test_vesting ──────
-│ error[E11001]: test failure
-│    ┌─ /home/ubuntu/aptos-core/aptos-move/move-examples/hello_blockchain/../../framework/aptos-framework/sources/timestamp.move:62:9
-│    │
-│ 61 │     public fun now_microseconds(): u64 acquires CurrentTimeMicroseconds {
-│    │                ---------------- In this function in 0x1::timestamp
-│ 62 │         borrow_global<CurrentTimeMicroseconds>(@aptos_framework).microseconds
-│    │         ^^^^^^^^^^^^^ Test was not expected to error, but it gave a MISSING_DATA (code 4008) error originating in the module 0000000000000000000000000000000000000000000000000000000000000001::timestamp rooted here
-│
-│
-│ stack trace
-│       timestamp::now_seconds(/home/ubuntu/aptos-core/aptos-move/move-examples/hello_blockchain/../../framework/aptos-framework/sources/timestamp.move:68)
-│       vesting::release_fund(/home/ubuntu/aptos-core/aptos-move/move-examples/hello_blockchain/sources/token_vesting.move:96)
-│       vesting::test_vesting(/home/ubuntu/aptos-core/aptos-move/move-examples/hello_blockchain/sources/token_vesting.move:156-160)
-│
-└──────────────────
-
-Test result: FAILED. Total tests: 1; passed: 0; failed: 1
-{
-  "Error": "Move unit tests failed"
-}
-
 
 
 ubuntu@ip-172-31-38-64:~/aptos-core/aptos-move/move-examples/hello_blockchain$
