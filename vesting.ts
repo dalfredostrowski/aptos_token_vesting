@@ -63,12 +63,6 @@ const pid="0x86c0477879e133d970eec70a64f9a1bbc1b7eab2efe8a3471b6e36ce8b370e2c";
     let bcsTxn = AptosClient.generateBCSTransaction(account1, txnRequest);
     let x = await client.submitSignedBCSTransaction(bcsTxn);
     console.log(x);
-
-    console.log("=== Initial Balances ===");
-     // :!:>section_4
-     console.log(`account1: ${await coinClient.checkBalance(account1)}`);
-     console.log(`account2: ${await coinClient.checkBalance(account2)}`); // <:!:section_4
-     console.log("");
 })();
   //Function
 //  it ("Get Funds", async () => {
