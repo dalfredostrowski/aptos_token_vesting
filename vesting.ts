@@ -40,6 +40,13 @@ const pid="0x86c0477879e133d970eec70a64f9a1bbc1b7eab2efe8a3471b6e36ce8b370e2c";
     //Any discrete amount and corresponding time
     //can be provided to get variety of payment schedules
     const release_amount =[10000, 50000, 10000, 30000];
+    //    const release_amount =[10000, 50000, 10000, 30000];
+    //100 000
+    //    const release_amount =[5000, 25000, 5000, 15000];
+    //50 000
+    // const release_amount =[2500, 12500, 2500, 7500];
+    //25 0000
+
     const release_time_increment =[ 3, 20, 30];
     var release_time:BigInt[]=[BigInt(now)]
     release_time_increment.forEach((item) => {
