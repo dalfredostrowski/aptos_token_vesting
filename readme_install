@@ -140,9 +140,6 @@ ubuntu@ip-172-31-38-64:~/aptos-core/ecosystem/typescript/sdk/examples/typescript
 > ts-test@1.0.0 vesting /home/ubuntu/aptos-core/ecosystem/typescript/sdk/examples/typescript
 > ts-node vesting.ts
 
-wfti    s
-wft
-what happened
 {
   hash: '0x860a34e5f1d769b33615e5760c8425beb2bce3add608b1b41b5b330ae7605e89',
   sender: '0xdfbdefb30ee4f48829768be16a90d04e92c46bf594429ec21b760204b3fc10cd',
